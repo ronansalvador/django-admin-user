@@ -11,3 +11,6 @@ class Tasks(models.Model):
     priority = models.IntegerField(
         choices=((1, 'Baixa'), (2, 'Média'), (3, 'Alta')))
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.title} - {self.due_date} - {self.completed}"

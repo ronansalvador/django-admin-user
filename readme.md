@@ -23,7 +23,7 @@ pip install django
 Iniciar Projeto
 
 ```
-django-admin startproject Nome-do-projeto
+django-admin startproject Nome-do-projeto .
 ```
 
 Executar o servidor:
