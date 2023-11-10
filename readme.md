@@ -35,9 +35,12 @@ python3 manage.py runserver
 
 ### Executar as migrations internas do Django
 
+caso crie algum model após iniciar o projeto execute esse comando
+
 ```
 python3 manage.py makemigrations
 ```
+
 
 ```
 python3 manage.py migrate
@@ -79,6 +82,14 @@ class Task(models.Model):
     priority = models.IntegerField(choices=((1, 'Baixa'), (2, 'Média'), (3, 'Alta')))
     created_at = models.DateTimeField(auto_now_add=True)
 ```
+
+Mudar vizualização no painel ADM
+
+```
+def __str__(self):
+        return f"{self.title} - {self.due_date} - {self.completed}"
+```
+
 
 ### Executar as migrations internas do Django
 
