@@ -20,11 +20,12 @@ pip install django
 ```
 
 
-Iniciar Projeto
+Iniciar Projeto (importante utili o `.` ao final do comando para criar apenas 1 pasta com o nome do projeto)
 
 ```
 django-admin startproject Nome-do-projeto .
 ```
+
 
 Executar o servidor:
 
